@@ -22,7 +22,7 @@ header{
     width:70% ;
 }
 .hcont1{
-      font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     color: white;
     text-align: center;
     font-size: 20px;
@@ -71,6 +71,9 @@ header{
 .hamname a{
     color: white;
     font-family: 'Acme', sans-serif;
+    position: relative;
+    top: 20px;
+    left: 20px;
 }
 .hamburger{
     position: absolute;
@@ -82,7 +85,6 @@ header{
     width: 100%;
 }
 .hamul{
-    margin: 0.2em;
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(50px);
     display: flex;
@@ -92,15 +94,15 @@ header{
     transition: 1s;
     position: absolute;
     z-index: 20;
-    right: 100%;
+    bottom: 100%;
     width: 100vw;
 }
 .hamul > li{
-    width: 30vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5em 0;
+    margin: 0.3em;
     padding: 0.2em;
     transition: 1s;
 }
@@ -120,10 +122,7 @@ header{
     display: none;
 }
 #menu:checked ~ .hamul{
-    right: -0.5%;
-}
-.hamline{
-    padding: 1.5em;
+    bottom: 40%;
 }
 .skills{
     margin: 30px 0;
@@ -1067,6 +1066,9 @@ footer{
     .desktopflex{
         display: none;
     }
+    .desktopflexskill{
+        display: none;
+    }
 }
 @media screen and (min-width:1400px) {
     header{
@@ -1136,16 +1138,17 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 5em;
     }
     .desktoppic img{
-        width: 50%;
+        width: 90%;
         border-radius: 10%;
     }
     .desktopmain{
         display: flex;
     }
     .skills{
-        width: 50%;
+        width: 80%;
         margin-top: 1em;
     }
     .desktopflex{
@@ -1185,5 +1188,14 @@ footer{
     .newname a:hover{
         text-decoration:underline;
         transform: scale(1.01);
+    }
+    .deskbeforeflex{
+        display: none;
+    }
+    .desktopflexskill{
+        display: flex;
+    }
+    .deskfst,.desksec{
+        width: 50%;
     }
 }
