@@ -98,6 +98,9 @@ header{
     bottom: 100%;
     width: 100vw;
 }
+.hamline{
+    position: sticky;
+}
 .hamul > li{
     width: 100%;
     display: flex;
@@ -841,6 +844,12 @@ input:nth-child(6):checked~.freviews{
     justify-content: center;
     width: 30%;
 }
+.sas{
+    color: red;
+}
+.fhari{
+    color: crimson;
+}
 footer{
     background-color: black;
     text-align: center;
@@ -1198,5 +1207,8 @@ footer{
     }
     .deskfst,.desksec{
         width: 50%;
+    }
+    @media screen and (orientation: landscape){
+
     }
 }
