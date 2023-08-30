@@ -846,6 +846,7 @@ input:nth-child(6):checked~.freviews{
 }
 .sas{
     color: red;
+    text-decoration: underline;
 }
 .fhari{
     color: crimson;
