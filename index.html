@@ -448,14 +448,15 @@
                 var name = document.getElementById("name").value;
                 var email = document.getElementById("email").value;
                 var message = document.getElementById("msg").value;
-                var body = 'name: '+ name+ '<br/> Email: '+email+ '<br/> Message: '+msg; 
+                var body = 'Name: '+ name+ '<br/> Email: '+email+ '<br/> Message: '+message; 
                 var mymail = "mailtomesrihari@gmail.com"
+                var frommail = "sriharis.contact@gmail.com"
                 Email.send({
                 SecureToken : "5e6c1c5b-e192-43d3-90d3-998b163dde2a",
                 To :mymail,
-                From :"harrypottersrihari@gmail.com",
-                Subject : "Contact inquiry",
-                Body : document.getElementById("body").value
+                From :frommail,
+                Subject : "Contact Inquiry from Portfolio Website",
+                Body : body
                 }).then(
                 message => alert(message)
                 );
