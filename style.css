@@ -1209,7 +1209,7 @@ footer{
     .deskfst,.desksec{
         width: 50%;
     }
-    @media screen and (orientation: landscape){
-
+    @media screen and (max-height:840px){
+       
     }
 }
