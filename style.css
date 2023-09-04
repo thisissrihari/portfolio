@@ -126,7 +126,7 @@ header{
     display: none;
 }
 #menu:checked ~ .hamul{
-    bottom: 40%;
+    bottom: -1000%;
 }
 .skills{
     margin: 30px 0;
